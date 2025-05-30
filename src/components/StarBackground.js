@@ -1,6 +1,6 @@
 "use client";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 export default function StarBackground() {
   const particlesInit = async (main) => {
@@ -18,7 +18,7 @@ export default function StarBackground() {
         },
         particles: {
           number: {
-            value: 80,
+            value: 300,
             density: {
               enable: true,
               area: 800,
@@ -35,12 +35,12 @@ export default function StarBackground() {
             random: true,
           },
           size: {
-            value: 1.5,
+            value: 2.5,
             random: true,
           },
           move: {
             enable: true,
-            speed: 0.6,
+            speed: 0.3,
             direction: "none",
             outMode: "out",
           },
@@ -55,8 +55,9 @@ export default function StarBackground() {
           },
           modes: {
             repulse: {
-              distance: 100,
-              duration: 0.4,
+              distance: 30,
+              duration: 1.5,
+              easing: "ease-out",
             },
           },
         },
