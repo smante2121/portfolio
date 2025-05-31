@@ -14,7 +14,7 @@ export default function ProjectsSection() {
     return (
       <section
         id="projects"
-        className="min-h-screen w-full bg-black text-white flex flex-col items-center justify-center px-4 py-16"
+        className="min-h-screen w-full text-white flex flex-col items-center justify-center px-4 py-16"
       >
         <h2 className="text-3xl font-bold mb-10 tracking-wider">Projects</h2>
   
