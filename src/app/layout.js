@@ -19,9 +19,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="sticky top-0 z-50 bg-black text-white h-16 flex justify-end items-stretch shadow-md">
+        <a
+          href="#about"
+          className="bg-pink-500 hover:bg-pink-400 px-6 flex items-center transition-colors"
+        >
+          About
+        </a>
+        <a
+          href="#projects"
+          className="bg-sky-500 hover:bg-sky-400 px-6 flex items-center transition-colors"
+        >
+          Projects
+        </a>
+      </nav>
+
         {children}
       </body>
     </html>

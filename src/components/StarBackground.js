@@ -31,33 +31,43 @@ export default function StarBackground() {
             type: "circle",
           },
           opacity: {
-            value: 0.8,
+            value: 0.9,
             random: true,
           },
           size: {
-            value: 2.5,
+            value: {min:1, max:3},
             random: true,
           },
           move: {
             enable: true,
-            speed: 0.3,
-            direction: "none",
-            outMode: "out",
+            speed: 0.25,
+            direction: "top",
+            random: true,
+            straight: true,
+            outModes:{
+                default: "bounce"
+            }
+          },
+          collisions: {
+            enable: true,
+            mode: "bounce",
           },
         },
         interactivity: {
           events: {
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "attract",
             },
             resize: true,
           },
           modes: {
-            repulse: {
-              distance: 30,
-              duration: 1.5,
-              easing: "ease-out",
+            attract: {
+              distance: 60,
+              duration: 0.5,
+              speed: 1,
+              factor: 1,
+              easing: "ease-out-quad",
             },
           },
         },
