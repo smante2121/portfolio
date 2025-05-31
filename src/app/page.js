@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import BackToTopButton from "@/components/BackToTopButton";
+
 import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function Home() {
