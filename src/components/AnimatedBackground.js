@@ -27,40 +27,42 @@ export default function AnimatedBackground() {
         rotationSpeed: (Math.random() - 0.5) * 0.0004,
         xOffsetAmplitude: Math.random() * 40 + 20,
         yOffsetAmplitude: Math.random() * 40 + 20,
+        swayAmplitude: Math.random() * 50 + 20,
+        swayFrequency: Math.random() * 0.0003 + 0.0001,
         frequency: Math.random() * 0.001 + 0.0005,
-        color: `rgba(0, ${100 + Math.random() * 155}, 255, 0.05)`
+        color: `rgba(0, ${100 + Math.random() * 100}, 180, 0.03)` // softer ocean blue
       });
     }
 
     function animate(time) {
       ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = "#010a0f";
+      ctx.fillStyle = "#010a0f"; // deep navy background
       ctx.fillRect(0, 0, width, height);
 
       for (let p of particles) {
         p.baseY += p.yVelocity;
         if (p.baseY + p.height < 0) p.baseY = height + p.height;
 
-        const x = p.baseX + Math.sin(time * p.frequency) * p.xOffsetAmplitude;
+        const sway = Math.cos(time * p.swayFrequency) * p.swayAmplitude;
+
+        const x = p.baseX + sway + Math.sin(time * p.frequency) * p.xOffsetAmplitude;
         const y = p.baseY + Math.cos(time * p.frequency) * p.yOffsetAmplitude;
 
         ctx.save();
         ctx.translate(x, y);
         ctx.rotate(p.angle);
 
-        // Use cosine for smoother transitions and normalize to [0, 1]
         const pulse = (Math.cos(time * p.frequency * 1.5) + 1) / 2;
-        const alpha = 0.04 + pulse * 0.02;
-        const glowAlpha = 0.2 + pulse * 0.2;
+        const alpha = 0.025 + pulse * 0.015;     // softer fill
+        const glowAlpha = 0.05 + pulse * 0.1;    // low intensity glow
 
-        const gradient = ctx.createLinearGradient(-p.width / 2, 0, p.width / 2, 0);
-        gradient.addColorStop(0, "rgba(0,0,0,0)");
-        gradient.addColorStop(0.5, p.color.replace(/0\.05/, alpha.toFixed(3)));
-        gradient.addColorStop(1, "rgba(0,0,0,0)");
+        const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, p.width / 2);
+        gradient.addColorStop(0, p.color.replace(/0\.03/, alpha.toFixed(3)));
+        gradient.addColorStop(1, "rgba(1, 10, 15, 0)"); // fade to background navy
 
         ctx.fillStyle = gradient;
-        ctx.shadowColor = p.color.replace(/0\.05/, glowAlpha.toFixed(3));
-        ctx.shadowBlur = 100;
+        ctx.shadowColor = p.color.replace(/0\.03/, glowAlpha.toFixed(3));
+        ctx.shadowBlur = 50; // less sharp glow
 
         ctx.beginPath();
         ctx.ellipse(0, 0, p.width / 2, p.height / 2, 0, 0, Math.PI * 2);
