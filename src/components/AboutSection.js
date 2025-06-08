@@ -15,24 +15,37 @@ import AboutLine from './AboutLine';
           </h2>
           <div className="mt-10 ps-20 w-[90vw] flex gap-10 items-center">
             <div className="w-[30%] flex flex-col items-center gap-4">
-              <Image src={picture}  alt="My Profile" className="w-64 h-64  object-cover items-start border border-white" />
-                        <a href="#about" 
-                        className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 rounded" 
-                        style={{ fontFamily: 'Playfair Display, serif' }}> 
-                        Resume
-                        </a>
-                        <a href="https://github.com/smante2121" target="_blank" rel="noopener noreferrer">
-                          <button className="hover:bg-sky-900 flex items-center gap-2 px-4 py-2 text-white rounded">
-                            <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10" />
-                          </button>
-                        </a>
-                        <a href="www.linkedin.com/in/sophia-mantegari-152302236" target="_blank" rel="noopener noreferrer">
-                          <button className="hover:bg-sky-900 flex items-center gap-2 px-4 py-2 text-white rounded">
-                            <img src="/icons/linkedin.svg" alt="linkedin" className="w-10 h-10" />
-                          </button>
-                        </a>
+              <div className="p-1 border-1 border-white">
+              <Image src={picture}  alt="My Profile" className="w-64 h-64  object-cover items-start border-2 border-white " />
+              </div>
+              <div className='mt-6'>
+                <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer"  
+                className="border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl" 
+                style={{ fontFamily: 'Playfair Display, serif' }}> 
+                Resume
+                </a>
+              </div>
+                <div className="flex ">
+                  <a href="https://github.com/smante2121" target="_blank" rel="noopener noreferrer">
+                    <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded">
+                      <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10" />
+                    </button>
+                  </a>
+                  <a href="www.linkedin.com/in/sophia-mantegari-152302236" target="_blank" rel="noopener noreferrer">
+                    <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded">
+                      <img src="/icons/linkedin.svg" alt="linkedin" className="w-10 h-10" />
+                    </button>
+                  </a>
+              </div>
+            </div>
+            
+            <div className="w-[70%] text-white">
+              <p className="text-lg leading-relaxed" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Hello, my name is Sophia Mantegari. I am a student at the University of Miami, double majoring in Computer Science and Data Science & Artificial Intelligence, with an minor in Mathematics. Set to graduate in December 2025, I combine my technical studies with hands-on software development experience. I'm constantly seeking opportunities to expand my skills and tackle new challenges in the field.
+              </p>
             </div>
           </div>
+
       </section>
     );
   }

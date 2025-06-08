@@ -1,31 +1,44 @@
-import ProjectCard from "./ProjectCards"; // adjust path if needed
+import ProjectCard from "./ProjectCards";
+import AboutLine from "./AboutLine";
 
 export default function ProjectsSection() {
-    const tiles = [
-      "EZ Spine",
-      "AGN DB",
-      "Predicting Anime Success",
-      "CNN and MLP",
-      "Patient Answering System",
-      "Dexcom Glucose Tracking",
-      "Libre Glucose Tracking",
-      "STT > Gemini > TTS",
-      "Master Mind"
-    ];
-  
-    return (
-      <section
-        id="projects"
-        className="min-h-screen w-full text-white flex flex-col items-center snap-start justify-center px-4 py-16"
+  const tiles = [
+    "EZ Spine",
+    "AGN DB",
+    "Predicting Anime Success",
+    "CNN and MLP",
+    "Patient Answering System",
+    "Dexcom Glucose Tracking",
+    "Libre Glucose Tracking",
+    "STT > Gemini > TTS"
+
+  ];
+
+  return (
+    <section
+      id="projects"
+      className="w-full flex flex-col items-center snap-start relative  pt-20 pb-20"
+    >
+      <AboutLine />
+
+      <h2
+        className="uppercase text-5xl font-bold mb-10 self-start ps-20"
+        style={{ fontFamily: 'Playfair Display, serif' }}
       >
-        <h2 className="text-3xl font-bold mb-10 tracking-wider">Projects</h2>
-  
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-[70%]">
+        Projects
+      </h2>
+
+      {/* Grid wrapper — centered horizontally */}
+      <div className="w-[80%] max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center">
           {tiles.map((title, index) => (
-            <ProjectCard key={index} title={title} />
+            <div key={index} className="w-full">
+              <ProjectCard title={title} />
+            </div>
+            
           ))}
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+}
