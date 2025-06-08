@@ -9,7 +9,7 @@ export default function ProjectCard({ title }) {
       {/* Closed Card */}
       <div
         onClick={() => setIsOpen(true)}
-        className="aspect-square  bg-sky-950 border border-white border-2 backdrop-blur-sm p-4 text-white shadow-2xl cursor-pointer hover:bg-sky-900 transition duration-300 flex flex-col justify-center items-center text-center"
+        className="aspect-square  bg-sky-950 border border-white border-2 backdrop-blur-sm p-4 text-white shadow-2xl shadow-slate-900 cursor-pointer hover:bg-sky-900 transition duration-300 flex flex-col justify-center items-center text-center"
       >
         {/* Title moved upward */}
         <h3

@@ -21,13 +21,13 @@ export default function HeroSection() {
         <div className="flex gap-4">
           <a
             href="#about"
-            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 rounded"
+            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-2xl shadow-slate-900"
             style={{ fontFamily: 'Playfair Display, serif' }}>
             About Me
           </a>
           <a
             href="#projects"
-            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2"
+            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-2xl shadow-slate-900"
             style={{ fontFamily: 'Playfair Display, serif' }}>
             Projects
           </a>
