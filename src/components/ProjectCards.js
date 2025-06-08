@@ -9,21 +9,22 @@ export default function ProjectCard({ title }) {
       {/* Closed Card */}
       <div
         onClick={() => setIsOpen(true)}
-        className="aspect-square  bg-sky-950 border border-white border-2 backdrop-blur-sm p-4 text-white shadow-2xl shadow-slate-900 cursor-pointer hover:bg-sky-900 transition duration-300 flex flex-col justify-center items-center text-center"
+        className="aspect-square relative bg-slate-800 border-white border-2 backdrop-blur-sm  text-white shadow-2xl shadow-slate-900 cursor-pointer hover:bg-sky-800 transition duration-300 flex flex-col justify-start text-left "
       >
         {/* Title moved upward */}
         <h3
-          className="text-2xl font-semibold text-left pb-5"
+          className="text-2xl font-semibold px-4 pt-4 "
           style={{ fontFamily: "Playfair Display, serif" }}
         >
           {title}
         </h3>
 
         {/* Horizontal Line */}
-        <div className="w-[100%]   h-[1px] bg-white mb-2"></div>
+        <div className=" absolute w-full bottom-[5.75rem] h-[1px] bg-white left-0"></div>
+        <div className=" absolute w-full bottom-0 h-[42%] bg-white left-0"></div>
 
 
-        <p className="text-sm text-slate-200" style={{ fontFamily: "Playfair Display, serif" }}>
+        <p className="absolute text-sm text-slate-800 px-4  bottom-[3em]  " style={{ fontFamily: "Playfair Display, serif" }}>
           Short one-sentence project preview goes here.
         </p>
       </div>

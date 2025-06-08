@@ -15,19 +15,19 @@ import AboutLine from './AboutLine';
           </h2>
           <div className="mt-10 ps-20 w-[90vw] flex gap-10 items-center">
             <div className="flex-[30%] flex flex-col items-center gap-4">
-              <div className="p-1 border-1 border-white shadow-2xl shadow-slate-900">
-              <Image src={picture}  alt="My Profile" className="w-64 h-64  object-cover items-start border-2 border-white " />
+              <div className="p-1 border-1 border-white shadow-xl shadow-slate-900">
+              <Image src={picture}  alt="My Profile" className="w-64 h-64  object-cover items-start border-2 border-white drop-shadow-2xl " />
               </div>
-              <div className='mt-6 shadow-2xl shadow-slate-900'>
+              <div className='mt-6 drop-shadow-lg drop-shadow-slate-900'>
                 <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer"  
-                className="bg-sky-950 border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-2xl shadow-slate-900" 
+                className="bg-sky-950 border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-lg shadow-slate-900" 
                 style={{ fontFamily: 'Playfair Display, serif' }}> 
                 Resume
                 </a>
               </div>
-                <div className="flex ">
+                <div className="flex pt-3 ">
                   <a href="https://github.com/smante2121" target="_blank" rel="noopener noreferrer">
-                    <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded">
+                    <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded ">
                       <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10" />
                     </button>
                   </a>

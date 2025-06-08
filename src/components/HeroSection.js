@@ -8,7 +8,7 @@ export default function HeroSection() {
       <DecorativeLines />
       <div className="ps-30 pt-10">
         <h1
-          className="text-5xl text-white mb-4 uppercase"
+          className="text-5xl text-white mb-4 uppercase text-shadow-lg"
           style={{ fontFamily: 'Playfair Display, serif' }}>
           Sophia Mantegari
         </h1>
@@ -18,16 +18,16 @@ export default function HeroSection() {
           Student at the University of Miami double majoring in Computer Science (B.S.) and Data Science & AI (B.S.) minoring in math.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 drop-shadow- drop-shadow-slate-900">
           <a
             href="#about"
-            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-2xl shadow-slate-900"
+            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-xl shadow-slate-900"
             style={{ fontFamily: 'Playfair Display, serif' }}>
             About Me
           </a>
           <a
             href="#projects"
-            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-2xl shadow-slate-900"
+            className="border border-white hover:bg-sky-900 text-white font-medium px-12 py-2 shadow-xl shadow-slate-900"
             style={{ fontFamily: 'Playfair Display, serif' }}>
             Projects
           </a>

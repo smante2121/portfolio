@@ -22,7 +22,7 @@ export default function ProjectsSection() {
       <AboutLine />
 
       <h2
-        className="uppercase text-5xl font-bold mb-10 self-start ps-20"
+        className="uppercase text-5xl font-bold mb-10 self-start ps-20 text-white text-shadow-lg"
         style={{ fontFamily: 'Playfair Display, serif' }}
       >
         Projects
