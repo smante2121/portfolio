@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import BackToTopButton from "@/components/BackToTopButton";
-import Navbar from "@/components/Navbar";
 import DropDown from "@/components/DropDown";
 
 export default function Home() {
@@ -67,7 +66,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <BackToTopButton show={showArrow} scrollToTop={() => {
-        router.push("#home"); // ✅ updates URL
+        router.push("#home"); 
         document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
       }}/>
     </div>

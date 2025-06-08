@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Sophia Mantegari",
   description: "Portfolio Website",
+  icons: {
+    icon: "../public/favicon.ico",
+
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +27,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap"
           rel="stylesheet"
         />
+         <link rel="icon" href="../public/favicon.ico"  />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
