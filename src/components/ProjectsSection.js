@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCards";
 import AboutLine from "./AboutLine";
+import projects from "./projectData";
 
 export default function ProjectsSection() {
   const tiles = [
@@ -31,11 +32,19 @@ export default function ProjectsSection() {
       {/* Grid wrapper — centered horizontally */}
       <div className="w-[80%] max-w-6xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center">
-          {tiles.map((title, index) => (
+          {projects.map((project, index) => (
             <div key={index} className="w-full">
-              <ProjectCard title={title} />
+              <ProjectCard
+                title={project.title}
+                about={project.about}
+                motivation={project.motivation}
+                languages={project.languages}
+                libraries={project.libraries}
+                skills={project.skills}
+                type={project.type}
+                link={project.link}
+              />
             </div>
-            
           ))}
         </div>
       </div>

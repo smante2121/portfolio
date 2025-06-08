@@ -20,7 +20,7 @@ import AboutLine from './AboutLine';
               </div>
               <div className='mt-6 drop-shadow-lg drop-shadow-slate-900'>
                 <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer"  
-                className="bg-sky-950 border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-lg shadow-slate-900" 
+                className=" bg-slate-900/30  border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-lg shadow-slate-900" 
                 style={{ fontFamily: 'Playfair Display, serif' }}> 
                 Resume
                 </a>
