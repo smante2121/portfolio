@@ -20,11 +20,9 @@ export default function ProjectCard({ title, about, motivation, languages, libra
         </h3>
 
         {/* Horizontal Line */}
-        <div className=" absolute w-full bottom-[5.75rem] h-[1px] bg-white left-0"></div>
-        <div className=" absolute w-full bottom-0 h-[41%] bg-slate-950/30 left-0"></div>
+        <div className=" absolute w-full bottom-0 h-[41%] bg-slate-950/30 left-0 border-t-2 border-white"></div>
 
-
-        <p className="absolute text-sm text-white px-4  bottom-[3em]  " style={{ fontFamily: "Playfair Display, serif" }}>
+        <p className="absolute text-sm text-white px-4  bottom-[3em]  " style={{ fontFamily: "Raleway, sans-serif"  }}>
           Short one-sentence project preview goes here.
         </p>
       </div>
@@ -35,42 +33,42 @@ export default function ProjectCard({ title, about, motivation, languages, libra
           <div className="relative bg-sky-950 backdrop-blur-xl  p-10  w-[80%] h-[60%] text-white shadow-2xl border border-white">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-3 right-4 text-white/60 hover:text-white text-xl"
+              className="absolute top-3 right-4 text-white hover:text-white text-xl"
             >
               ✕
             </button>
             <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Playfair Display, serif" }}>{title}</h2>
-            <p className="text-sm opacity-80 mb-2" style={{ fontFamily: "Playfair Display, serif" }}>
+            <p className="text-base mb-2 " style={{ fontFamily: "Work Sans, sans-serif"  }}>
               <strong>About:</strong> {about}
             </p>
 
-            <p className="text-sm opacity-80 mb-2" style={{ fontFamily: "Playfair Display, serif" }}>
+            <p className="text-base mb-2" style={{ fontFamily: "Work Sans, sans-serif"  }}>
               <strong>Motivation:</strong> {motivation}
             </p>
 
-            <p className="text-sm opacity-80 mb-2" style={{ fontFamily: "Playfair Display, serif" }}>
+            <p className="text-base mb-2" style={{ fontFamily: "Work Sans, sans-serif" }}>
               <strong>Languages Used:</strong> {languages}
             </p>
 
-            <p className="text-sm opacity-80 mb-2" style={{ fontFamily: "Playfair Display, serif" }}>
+            <p className="text-base  mb-2" style={{ fontFamily: "Work Sans, sans-serif" }}>
               <strong>Libraries and Frameworks:</strong> {libraries}
             </p>
 
-            <p className="text-sm opacity-80 mb-6" style={{ fontFamily: "Playfair Display, serif" }}>
+            <p className="text-base mb-6" style={{ fontFamily: "Work Sans, sans-serif"  }}>
               <strong>Skills and Concepts:</strong> {skills}
             </p>
             {type === "github" ? (
               <a href={link} target="_blank" rel="noopener noreferrer">
                 <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-2 text-white rounded">
                   <img src="/icons/github.svg" alt="GitHub" className="w-6 h-6" />
-                  <span className="text-sm" style={{ fontFamily: "Playfair Display, serif" }}>View Code</span>
+                  
                 </button>
               </a>
               ) : (
-                <a href="https://github.com/smante2121" target="_blank" rel="noopener noreferrer">
-                    <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded ">
-                      <img src="/icons/github.svg" alt="GitHub" className="w-10 h-10" />
-                    </button>
+                <a href={link} target="_blank" rel="noopener noreferrer"  
+                className=" bg-slate-900/30  border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-lg shadow-slate-900" 
+                style={{ fontFamily: 'Playfair Display, serif' }}> 
+                Learn More
                 </a>
               )}
             

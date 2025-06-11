@@ -40,7 +40,7 @@ import AboutLine from './AboutLine';
             </div>
            <div className="w-px h-[80%] bg-white opacity-60 flex-shrink-0"> </div>
             <div className="flex-[70%] text-white">
-              <p className="text-lg leading-relaxed" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <p className="text-lg leading-relaxed" style={{ fontFamily: "Work Sans, sans-serif"  }}>
                 Hello, my name is Sophia Mantegari. I am a student at the University of Miami, double majoring in Computer Science and Data Science & Artificial Intelligence, with an minor in Mathematics. Set to graduate in December 2025, I combine my technical studies with hands-on software development experience. I'm constantly seeking opportunities to expand my skills and tackle new challenges in the field.
               </p>
             </div>

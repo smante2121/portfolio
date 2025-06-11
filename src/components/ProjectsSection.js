@@ -3,17 +3,6 @@ import AboutLine from "./AboutLine";
 import projects from "./projectData";
 
 export default function ProjectsSection() {
-  const tiles = [
-    "EZ Spine",
-    "AGN DB",
-    "Predicting Anime Success",
-    "CNN and MLP",
-    "Patient Answering System",
-    "Dexcom Glucose Tracking",
-    "Libre Glucose Tracking",
-    "STT > Gemini > TTS"
-
-  ];
 
   return (
     <section

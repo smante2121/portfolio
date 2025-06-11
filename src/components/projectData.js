@@ -1,13 +1,13 @@
 const projects = [
   {
     title: "EZ Spine",
-    about: "A spine classification model using geometric features.",
-    motivation: "To automate diagnosis of spinal conditions from X-ray data.",
+    about: "Developed Python algorithms for 3D dendritic spine analysis using B-Spline interpolation and PCA. The tool reconstructs dendrites from 2D Golgi-stained images and classifies spines morphologically.",
+    motivation: "To automate spine classification and address inefficiencies in current neurodegeneration research workflows.",
     languages: "Python",
-    libraries: "NumPy, Matplotlib, Scikit-learn",
-    skills: "Classification, Feature Engineering, Data Visualization",
-    type: "github",
-    link: "https://github.com/smante2121/EZ-Spine",
+    libraries: "NumPy, OpenCV, Matplotlib, Seaborn, Pandas, PyInstaller",
+    skills: "3D Reconstruction, B-Spline Interpolation, PCA, Image Processing, Git Collaboration",
+    type: "learnMore",
+    link: "https://bonsaiacg.com/projects.html#neuroscience-section",
   },
   {
     title: "EZ Spine",
