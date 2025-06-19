@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import BackToTopButton from "@/components/BackToTopButton";
 import DropDown from "@/components/DropDown";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const router = useRouter();
@@ -69,6 +70,7 @@ export default function Home() {
         router.push("#home"); 
         document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
       }}/>
+      <Footer/>
     </div>
   );
 }
