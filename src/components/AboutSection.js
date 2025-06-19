@@ -19,10 +19,15 @@ import AboutLine from './AboutLine';
               <Image src={picture}  alt="My Profile" className="w-64 h-64  object-cover items-start border-2 border-white drop-shadow-2xl " />
               </div>
               <div className='mt-6 drop-shadow-lg drop-shadow-slate-900'>
-                <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer"  
-                className=" bg-slate-900/30  border border-white hover:bg-sky-900 text-white font-medium px-8 py-2 uppercase text-xl shadow-lg shadow-slate-900" 
-                style={{ fontFamily: 'Playfair Display, serif' }}> 
-                Resume
+                <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <button href="#projects" className="relative inline-block font-medium group py-2 px-10 cursor-pointer ">
+                    <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1.5 translate-y-1.5 bg-[#345167] group-hover:-translate-x-0 group-hover:-translate-y-0 shadow-xl shadow-slate-900"></span>
+                    <span className="absolute  inset-0 w-full h-full bg-[#0b263e] border border-white group-hover:bg-sky-900"></span>
+                    <span className="relative text-white text-lg" 
+                    style={{ fontFamily: 'Playfair Display, serif' }}>
+                      Resume
+                    </span> 
+                  </button>  
                 </a>
               </div>
                 <div className="flex pt-3 ">

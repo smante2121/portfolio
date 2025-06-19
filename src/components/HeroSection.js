@@ -21,25 +21,25 @@ export default function HeroSection() {
         </p>
 
         <div className="flex gap-4 drop-shadow- drop-shadow-slate-900">
-          <a
-            href="#about"
-            className="bg-slate-900/40 border border-white hover:bg-sky-900 text-white text-lg px-12 py-2 shadow-xl shadow-slate-900"
-            style={{ fontFamily: 'Playfair Display, serif' }}>
-            About Me
+          <a href="#about"  >
+            <button href="#projects" className="relative inline-block font-medium group py-2 px-10 cursor-pointer ">
+              <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1.5 translate-y-1.5 bg-[#345167] group-hover:-translate-x-0 group-hover:-translate-y-0 shadow-xl shadow-slate-900"></span>
+              <span className="absolute  inset-0 w-full h-full bg-[#0b263e] border border-white group-hover:bg-sky-900"></span>
+              <span className="relative text-white text-lg" 
+              style={{ fontFamily: 'Playfair Display, serif' }}>
+                About Me
+              </span> 
+            </button>  
           </a>
-          <a
-            href="#projects"
-            className="bg-slate-900/40 border border-white hover:bg-sky-900 text-white text-lg px-12 py-2 shadow-xl shadow-slate-900"
-            style={{ fontFamily: 'Playfair Display, serif' }}>
-            Projects
+          <a href="#projects" >
+            <button href="#projects" className="relative inline-block font-medium group py-2 px-10 cursor-pointer ">
+              <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1.5 translate-y-1.5 bg-[#345167] group-hover:-translate-x-0 group-hover:-translate-y-0 shadow-xl shadow-slate-900"></span>
+              <span className="absolute  inset-0 w-full h-full bg-[#0b263e] border border-white group-hover:bg-sky-900"></span>
+              <span className="relative text-white text-lg" 
+              style={{ fontFamily: 'Playfair Display, serif' }}>
+                Projects</span> 
+            </button>  
           </a>
-          <button className="relative inline-block font-medium group py-2 px-10 ">
-            <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1.5 translate-y-1.5 bg-[#345167] group-hover:-translate-x-0 group-hover:-translate-y-0 shadow-xl shadow-slate-900"></span>
-            <span className="absolute  inset-0 w-full h-full bg-[#0b263e] border border-white group-hover:bg-sky-900"></span>
-            <span className="relative text-white text-lg" 
-            style={{ fontFamily: 'Playfair Display, serif' }}>
-              About Me</span>
-          </button>
         </div>
       </div>
     </section>
