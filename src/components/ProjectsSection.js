@@ -7,20 +7,18 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className=" w-full flex flex-col items-center snap-start relative pt-20 pb-30   "
-    >
+      className="h-full w-full flex flex-col items-center snap-start relative pt-20 pb-30 px-10 sm:px-15 md:px-20">
       <AboutLine />
-
       <h2
-        className="uppercase text-5xl font-bold mb-10 self-start ps-20 text-white text-shadow-lg"
+        className="uppercase text-5xl font-bold mb-10  text-white text-shadow-lg w-full pl-[1vw]"
         style={{ fontFamily: 'Playfair Display, serif' }}
       >
         Projects
       </h2>
 
       {/* Grid wrapper — centered horizontally */}
-      <div className="w-[80%] max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center">
+      <div className="w-[100%] max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
           {projects.map((project, index) => (
             <div key={index} className="w-full">
               <ProjectCard
