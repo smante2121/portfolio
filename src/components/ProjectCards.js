@@ -10,19 +10,18 @@ export default function ProjectCard({ title, about, motivation, languages, libra
       {/* Closed Card */}
       <div
         onClick={() => setIsOpen(true)}
-        className="aspect-square relative bg-slate-900/40 border-white border-2 backdrop-blur-sm  text-white shadow-2xl shadow-slate-900 cursor-pointer hover:bg-sky-800 transition duration-300 flex flex-col justify-start text-left ">
-        {/* Title moved upward */}
-        <h3
-          className="text-2xl font-semibold px-4 pt-4 "
-          style={{ fontFamily: "Playfair Display, serif" }}
-        >
-          {title}
-        </h3>
-
-        <div className=" absolute w-full bottom-0 h-[41%] bg-slate-950/30 left-0 border-t-2 border-white"></div>
-        <p className="absolute text-sm text-white h-[38%] px-4  py-1 bottom-0  " style={{ fontFamily: "Raleway, sans-serif"  }}>
-          Short one-sentence project preview goes here.
-        </p>
+        className="aspect-square relative cursor-pointer group">
+          <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1.5 translate-y-1.5 bg-[#345167] group-hover:-translate-x-0 group-hover:-translate-y-0 shadow-xl shadow-slate-900 z-0"></span>
+          <span className="absolute inset-0 w-full h-full bg-[#0b263e] border border-white group-hover:bg-sky-900 z-10"></span>
+          <div className="relative z-20 flex flex-col justify-start text-left w-full h-full px-4 pt-4 text-white">
+            <h3 className="text-2xl font-semibold "
+            style={{ fontFamily: "Playfair Display, serif" }} >
+              {title}
+            </h3>
+            <div className=" absolute w-full bottom-0 h-[41%] bg-slate-950/30 left-0 border-t-2 border-white"></div>
+        <p className="absolute text-sm text-white h-[38%] px-0  py-1 bottom-0 z-20  " style={{ fontFamily: "Raleway, sans-serif"  }}>
+          Short one-sentence project preview goes here. </p>
+          </div>
       </div>
 
       {/* Open Modal */}
@@ -78,3 +77,5 @@ export default function ProjectCard({ title, about, motivation, languages, libra
     </>
   );
 }
+
+

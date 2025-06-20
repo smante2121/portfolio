@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="w-full flex flex-col items-center snap-start relative  pt-20 pb-30"
+      className=" w-full flex flex-col items-center snap-start relative pt-20 pb-30   "
     >
       <AboutLine />
 
