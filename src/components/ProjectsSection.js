@@ -7,10 +7,10 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="h-auto sm:h-full w-full flex flex-col items-center snap-start relative  pt-16 sm:pt-20  pb-20 sm:pb-30 px-6 sm:px-15 md:px-20">
+      className="h-auto sm:h-full w-full flex flex-col items-center snap-start relative  pt-15 sm:pt-20  pb-20 sm:pb-30 px-6 sm:px-15 md:px-20">
       <ProjectLines />
       <h2
-        className="uppercase  text-4xl sm:text-5xl font-bold mb-7 sm:mb-10  text-white text-shadow-lg w-full pl-[1vw]  "
+        className="uppercase  text-4xl sm:text-5xl font-bold mb-8 sm:mb-10  text-white text-shadow-lg w-full pl-[1vw]  "
         style={{ fontFamily: 'Playfair Display, serif' }}
       >
         Projects
