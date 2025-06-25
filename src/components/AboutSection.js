@@ -7,19 +7,19 @@ export default function AboutSection() {
     <section id="about" className=" snap-start h-screen flex flex-col relative ">
       <AboutLine />
       <h2
-        className="align-top text-left uppercase text-3xl lg:text-5xl font-bold  ps-10 sm:ps-10 md:ps-15 lg:ps-22 pt-20  text-white md:text-4xl sm:text-3xl"
+        className="align-top text-left uppercase text-3xl lg:text-5xl font-bold ps-10 sm:ps-10 md:ps-15 lg:ps-22 pt-20  text-white md:text-4xl sm:text-3xl"
         style={{ fontFamily: "Playfair Display, serif" }}
       >
         About Me
       </h2>
 
-      <div className="mt-10 ps-10 sm:ps-10 md:ps-15 lg:ps-22 w-[90vw] flex gap-10 items-center">
-        <div className="flex-[20%]  flex flex-col items-center  gap-2 sm:gap-3 md:gap-4 ">
+      <div className="mt-10 ps-10 sm:ps-10 md:ps-15 lg:ps-22 w-[90vw] flex gap-5 sm:gap-10 sm:items-center items-start">
+        <div className="flex-[20%]  flex flex-col items-center  gap-2 sm:gap-3 md:gap-4 sm:pt-10 pt-5 ">
           <div className="w-[120%] lg:w-[99%] p-1  md:border-white shadow-xl shadow-slate-900 md:border ">
             <Image
               src={picture}
               alt="My Profile"
-              className="  h-auto  object-cover items-start  border-1 sm:border-2 border-white drop-shadow-2xl "
+              className="  h-auto  object-cover items-start  border-1 md:border-2 border-white drop-shadow-2xl "
             />
           </div>
           <div className="mt-6 drop-shadow-lg drop-shadow-slate-900">
@@ -49,11 +49,11 @@ export default function AboutSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded ">
+              <button className="hover:bg-sky-900 flex items-center gap-1 sm:gap-2 px-2 py-4 text-white rounded ">
                 <img
                   src="/icons/github.svg"
                   alt="GitHub"
-                  className="w-10 h-10"
+                  className="lg:w-10   w-10 "
                 />
               </button>
             </a>
@@ -62,7 +62,7 @@ export default function AboutSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="hover:bg-sky-900 flex items-center gap-2 px-3 py-4 text-white rounded">
+              <button className="hover:bg-sky-900 flex items-center gap-2 sm:gap-2 px-2  py-4 text-white rounded">
                 <img
                   src="/icons/linkedin.svg"
                   alt="linkedin"
@@ -72,10 +72,10 @@ export default function AboutSection() {
             </a>
           </div>
         </div>
-        <div className="w-px h-[100%] pt-10 bg-white opacity-60 flex-shrink-0"> </div>
-        <div className="flex-[80%] text-white pt-10 md:pt-0 ">
+        <div className="w-px h-[100%] bg-white opacity-60 flex-shrink-0 "> </div>
+        <div className=" text-white pt-10 md:pt-0 ">
           <p
-            className="text-bas md:text-lg leading-relaxed"
+            className="text-bas md:text-lg pt-0 leading-relaxed items:start sm:items-center"
             style={{ fontFamily: "Work Sans, sans-serif" }}
           >
             Hello, my name is Sophia Mantegari. I am a student at the University
