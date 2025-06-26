@@ -15,6 +15,7 @@ export default function AboutSection() {
 
       <div className="sm:mt-10 mt-8 w-full px-2 sm:px-10 md:px-12 lg:px-14 flex gap-0 sm:gap-3">
         <div className=" basis-2/5 sm:basis-1/4  flex flex-col items-center  gap-3 sm:gap-3 pt-5 sm:pt-10 px-1 sm:px-2 md:px-4 lg:px-8">
+        {/* use aspect-ratio aspect-1/2 for photo */}
           <div className="w-[90%] lg:w-[99%] p-1  md:border-white shadow-xl shadow-slate-900 md:border ">
             <Image
               src={picture}
